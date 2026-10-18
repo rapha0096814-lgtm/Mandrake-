@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050508">
+<meta name="description" content="Mandrake Cartões & Crédito — catálogo exclusivo de cartões de bancos e notas de real premium.">
+<title>Mandrake Cartões & Crédito | Catálogo Exclusivo</title>
+<!-- FONTES PADRÃO OFICIAL (Elegância e Legibilidade) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* PALETA ULTRA LUXO - TOR BROWSER */
+:root{
+  --bg:#050508;
+  --panel:#0a0a0f;
+  --purple:#8b5cf6;
+  --violet:#6d28d9;
+  --pink:#d946ef;
+  --text:#ffffff;
+  --muted:#a1a1aa;
+  --silver:#e4e4e7;
+  --line:rgba(139,92,246,0.15);
+  --line-hover:rgba(139,92,246,0.4);
+  --radius:20px;
+  --max:1180px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{
+  margin:0;
+  background:radial-gradient(ellipse at 50% -20%,rgba(109,40,217,.15),transparent 50%),var(--bg);
+  color:var(--text);
+  font-family: 'Inter', sans-serif; /* Fonte oficial de leitura */
+  line-height:1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font-family: 'Inter', sans-serif;}
+
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,var(--violet),var(--pink),var(--purple),var(--violet))}
+
+/* HEADER & NAVEGAÇÃO */
+header{position:sticky;top:0;z-index:20;background:rgba(5,5,8,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{height:95px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;text-transform:uppercase}
+/* TEXTO DA MARCA (Sem logo) */
+.brand-text{display:flex;flex-direction:column;justify-content:center;}
+.brand-text span{font-family: 'Montserrat', sans-serif; font-size:22px; font-weight:800; color:var(--text); letter-spacing:1px; line-height:1.1;}
+.brand-text small{font-family: 'Inter', sans-serif; color:var(--purple); font-size:11px; letter-spacing:2px; font-weight:600; margin-top:6px; text-transform:uppercase;}
+.links{display:flex;gap:28px;align-items:center;font-size:13px;font-weight:500;color:var(--silver); text-transform:uppercase; letter-spacing:1px;}
+.links a{transition:color .3s}
+.links a:hover{color:var(--pink)}
+
+/* BOTÕES */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;padding:15px 28px;border-radius:6px;font-weight:600;font-size:13px;cursor:pointer;transition:all .3s ease;letter-spacing:0.5px; text-transform:uppercase; font-family:'Playfair Display', serif;}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(110deg,var(--violet),var(--purple));color:white;box-shadow:0 8px 25px rgba(109,40,217,0.4);border:1px solid rgba(255,255,255,0.1)}
+.primary:hover{box-shadow:0 12px 35px rgba(109,40,217,0.6);background:linear-gradient(110deg,var(--purple),var(--pink))}
+.ghost{border-color:var(--line-hover);background:rgba(255,255,255,0.03);color:var(--text)}
+.ghost:hover{background:rgba(139,92,246,0.1);border-color:var(--purple)}
+
+/* HERO SECTION COM A FOTO DA BALACLAVA */
+.hero{position:relative;min-height:700px;display:grid;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+/* AQUI ESTÁ O AJUSTE: url('capa.webp') em vez de capa.jpg */
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,8,0.98) 0%,rgba(5,5,8,0.85) 45%,rgba(5,5,8,0.3) 100%),url('capa.webp') center 20%/cover no-repeat;opacity:.95}
+.hero-content{position:relative;z-index:1;max-width:760px;padding:100px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--silver);border:1px solid var(--line-hover);background:rgba(139,92,246,0.1);border-radius:999px;padding:8px 16px;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--pink);box-shadow:0 0 12px var(--pink)}
+.hero h1{font-family: 'Playfair Display', serif; font-size:clamp(40px,6vw,70px);line-height:1.1;letter-spacing:0px;margin:24px 0 22px;font-weight:800}
+.hero h1 span{background:linear-gradient(100deg,#fff 10%,var(--silver) 50%,var(--purple) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:600px;color:var(--muted);font-size:16px;margin:0 0 35px;font-weight:400; line-height:1.8;}
+.actions{display:flex;gap:16px;flex-wrap:wrap}
+.trustline{display:flex;gap:24px;flex-wrap:wrap;margin-top:40px;color:var(--silver);font-size:11px;font-weight:500;letter-spacing:1px; text-transform:uppercase;}
+
+/* SEÇÕES GERAIS */
+.section{padding:100px 0}
+.section-head{max-width:800px;margin-bottom:50px}
+.kicker{color:var(--purple);font-size:11px;text-transform:uppercase;letter-spacing:2px;font-weight:700;}
+.section h2{font-family: 'Playfair Display', serif; font-size:clamp(30px,4vw,44px);line-height:1.2;letter-spacing:0px;margin:12px 0 20px;font-weight:700}
+.section-head p, .muted{color:var(--muted);font-size:15px; line-height:1.8;}
+
+/* CARDS */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);background:linear-gradient(160deg,rgba(15,15,20,0.9),rgba(5,5,8,0.9));border-radius:var(--radius);padding:26px;position:relative;overflow:hidden;transition:all .3s ease}
+.card:hover{transform:translateY(-6px);border-color:var(--line-hover);box-shadow:0 15px 40px rgba(0,0,0,0.6)}
+.card-icon{width:50px;height:50px;border:1px solid var(--line-hover);background:rgba(139,92,246,0.08);border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:18px;color:var(--silver)}
+.card h3{font-family: 'Playfair Display', serif; font-size:18px;margin:0 0 10px;font-weight:700;color:var(--text)}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.pill{display:inline-block;border:1px solid var(--line-hover);border-radius:999px;padding:6px 14px;color:var(--silver);font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;background:rgba(139,92,246,0.05);}
+.price{font-family: 'Playfair Display', serif; font-size:26px;font-weight:700;margin:18px 0 6px;color:var(--text);letter-spacing:0px}
+.price small{font-family: 'Inter', sans-serif;font-size:12px;color:var(--muted);font-weight:400; letter-spacing:0px;}
+.product-image{width:100%;aspect-ratio:1.45;object-fit:cover;border-radius:10px;border:1px solid var(--line);margin:18px 0 20px;background:#000}
+.card .btn{margin-top:20px;width:100%; padding:12px 18px; font-size:12px;}
+
+/* BANNER (PACOTES) */
+.banner{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:45px;border:1px solid var(--line-hover);border-radius:28px;background:radial-gradient(circle at 90% 10%,rgba(109,40,217,0.2),transparent 40%),linear-gradient(130deg,#0a0a0f,#050508)}
+.banner-art{min-height:240px;border-radius:20px;background:linear-gradient(145deg,rgba(109,40,217,0.4),rgba(5,5,8,0.8)),url('1 (3).jpg') center/cover;display:grid;place-items:center;border:1px solid var(--line-hover)}
+.symbol{width:140px;height:140px;border:1px solid rgba(255,255,255,0.3);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 50px rgba(139,92,246,0.3),inset 0 0 30px rgba(139,92,246,0.1);font-size:48px;backdrop-filter:blur(4px);color:var(--silver)}
+
+/* GALERIA DE NOTAS */
+.gallery-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 16px;margin-top: 20px;}
+.gallery-img {width: 100%;height: 280px;object-fit: cover;border-radius: 12px;border: 1px solid var(--line);transition: all 0.3s ease;cursor: pointer;background-color: #000;}
+.gallery-img:hover {transform: translateY(-5px) scale(1.02);border-color: var(--purple);box-shadow: 0 12px 30px rgba(109, 40, 217, 0.3);}
+
+/* CONTATO */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px}
+.panel{padding:36px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+.contact-item{padding:16px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:14px}
+.contact-item b{display:block;color:var(--text);margin-bottom:6px;font-size:11px;text-transform:uppercase;letter-spacing:1px;}
+.form{display:grid;gap:16px}
+.form label{font-size:11px;color:var(--silver);font-weight:600;letter-spacing:1px; text-transform:uppercase;}
+.form input,.form textarea,.form select{width:100%;margin-top:8px;padding:15px 16px;background:#000;border:1px solid var(--line-hover);border-radius:6px;color:var(--text);outline:none;transition:border-color .3s; font-size:14px;}
+.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--purple);box-shadow:0 0 0 2px rgba(139,92,246,0.2)}
+.form textarea{min-height:120px;resize:vertical}
+.notice{font-size:11px;color:var(--muted);margin-top:5px}
+
+/* FOOTER */
+.footer{padding:45px 0;border-top:1px solid var(--line);background:#020203}
+.footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:center;flex-wrap:wrap}
+.footer p{font-size:12px;color:var(--muted); margin-top: 15px;}
+
+/* ANIMAÇÕES E RESPONSIVIDADE */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s}
+.reveal.visible{opacity:1;transform:none}
+.mobile-toggle{display:none;background:none;border:1px solid var(--line);color:white;border-radius:6px;padding:8px 12px;cursor:pointer; font-size:18px;}
+
+@media(max-width:850px){
+  .links{display:none;position:absolute;top:95px;left:0;right:0;background:#050508;padding:24px;flex-direction:column;border-bottom:1px solid var(--line)}
+  .links.open{display:flex}
+  .mobile-toggle{display:block}
+  .nav>.btn{display:none}
+  .grid,.gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .banner,.contact-grid{grid-template-columns:1fr}
+  .hero{min-height:610px}
+  .gallery-img{height:200px}
+  .brand-text span{font-size:18px;}
+}
+@media(max-width:560px){
+  .wrap{width:calc(100% - 28px)}
+  .nav{height:85px}
+  .links{top:85px}
+  .hero{min-height:630px}
+  .hero-content{padding:70px 0}
+  .hero p{font-size:14px}
+  .section{padding:70px 0}
+  .grid,.gallery-grid{grid-template-columns:1fr}
+  .card{padding:22px}
+  .banner{padding:24px}
+  .footer-inner{align-items:flex-start;flex-direction:column}
+  .gallery-img{height:250px}
+  .brand-text span{font-size:15px;}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="wrap nav">
+<!-- MARCA SEM LOGO -->
+<a class="brand" href="#inicio">
+  <span class="brand-text">MANDRAKE CARTÕES & CRÉDITO<small>CATÁLOGO PREMIUM</small></span>
+</a>
+<nav class="links" id="navlinks"><a href="#cartoes">Cartões</a><a href="#mix">Pacotes</a><a href="#colecionaveis">Notas de Real</a><a href="#contato">Contato</a></nav>
+<a class="btn primary" href="#contato">Consultar Catálogo</a><button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu">☰</button>
+</div></header>
+<main>
+
+<!-- HERO COM A FOTO DA BALACLAVA -->
+<section class="hero" id="inicio"><div class="wrap"><div class="hero-content">
+<div class="eyebrow"><span class="dot"></span> Atendimento Exclusivo e Privado</div>
+<h1>ELEGÂNCIA EM<br><span>CARTÕES DE BANCO.</span></h1>
+<p>Oferecemos uma linha premium de cartões de bancos e notas de real, desenvolvidos com rigoroso padrão de qualidade. Materiais de alta durabilidade e acabamento impecável para colecionadores e projetos de alto nível.</p>
+<div class="actions"><a class="btn primary" href="#cartoes">Ver Catálogo</a><a class="btn ghost" href="https://t.me/MerlinACunha" target="_blank" rel="noopener">Falar no Privado</a></div>
+<div class="trustline"><span>✦ Produtos de Alta Qualidade</span><span>✦ Envio Discreto</span><span>✦ Atendimento Personalizado</span></div>
+</div></div></section>
+
+<!-- CARTÕES -->
+<section class="section" id="cartoes"><div class="wrap">
+<div class="section-head reveal">
+  <div class="kicker">Linha de Cartões</div>
+  <h2>Cartões de Bancos.</h2>
+  <p>Trabalhamos com réplicas de alta qualidade para fins de colecionismo e composição visual. Nossos cartões possuem textura, relevo e acabamento premium, sem qualquer tipo de clonagem ou uso fraudulento.</p>
+</div>
+<div class="grid">
+<article class="card reveal"><span class="pill">Bradesco</span><img class="product-image" src="1 (1).jpg" alt="Cartão Bradesco Condomínio"><h3>Bradesco Condomínio</h3><div class="price">R$ 45,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">Ourocard</span><img class="product-image" src="1 (2).jpg" alt="Cartão Ourocard Universitário"><h3>Ourocard Amarelo</h3><div class="price">R$ 50,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">Ourocard Infinite</span><img class="product-image" src="1 (3).jpg" alt="Cartão Ourocard Infinite Black"><h3>Ourocard Infinite</h3><div class="price">R$ 100,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">Caixa</span><img class="product-image" src="1 (4).jpg" alt="Cartão Caixa Poupança"><h3>Caixa Poupança</h3><div class="price">R$ 40,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">Ícone Infinite</span><img class="product-image" src="1 (5).jpg" alt="Cartão Ícone Visa Infinite"><h3>Ícone Visa Infinite</h3><div class="price">R$ 90,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">Nubank</span><img class="product-image" src="1 (6).jpg" alt="Cartão Nubank Roxo"><h3>Nubank Roxo</h3><div class="price">R$ 50,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">PicPay</span><img class="product-image" src="1 (7).jpg" alt="Cartão PicPay Platinum"><h3>PicPay Platinum</h3><div class="price">R$ 60,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">Amazon Prime</span><img class="product-image" src="1 (8).jpg" alt="Cartão Amazon Prime"><h3>Amazon Prime World Elite</h3><div class="price">R$ 80,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+<article class="card reveal"><span class="pill">PagBank</span><img class="product-image" src="1 (9).jpg" alt="Cartão PagBank Black"><h3>PagBank Black</h3><div class="price">R$ 70,00</div><a class="btn ghost" href="#contato">Consultar Modelo</a></article>
+</div>
+</div></section>
+
+<!-- PACOTES -->
+<section class="section" id="mix"><div class="wrap">
+<div class="banner reveal"><div><div class="kicker">Combos Exclusivos</div><h2>Pacotes Selecionados.</h2><p class="muted">Monte sua coleção com nossas opções de pacotes. Consulte a disponibilidade e as condições de cada combo diretamente com nossa equipe.</p><a class="btn primary" href="#contato" style="margin-top:20px;">Consultar Pacotes</a></div><div class="banner-art"><div class="symbol">✦</div></div></div>
+<div class="grid" style="margin-top:24px">
+<article class="card reveal"><div class="card-icon">📦</div><h3>Mix de 3</h3><p>Pacote com 3 unidades.</p><div class="price">R$ 80,00</div><a class="btn ghost" href="#contato">Consultar</a></article>
+<article class="card reveal"><div class="card-icon">📦</div><h3>Mix de 5</h3><p>Pacote com 5 unidades.</p><div class="price">R$ 120,00</div><a class="btn ghost" href="#contato">Consultar</a></article>
+<article class="card reveal"><div class="card-icon">📦</div><h3>Mix de 10</h3><p>Pacote com 10 unidades.</p><div class="price">R$ 200,00</div><a class="btn ghost" href="#contato">Consultar</a></article>
+<article class="card reveal"><div class="card-icon">📦</div><h3>Mix de 20</h3><p>Pacote com 20 unidades.</p><div class="price">R$ 380,00</div><a class="btn ghost" href="#contato">Consultar</a></article>
+</div>
+</div></section>
+
+<!-- LINHA PREMIUM (NOTAS) -->
+<section class="section" id="colecionaveis"><div class="wrap">
+    <div class="section-head reveal" style="text-align: center; max-width: 800px; margin: 0 auto 50px auto;">
+        <div class="kicker">Linha Premium</div>
+        <h2>Notas de Real.</h2>
+        <p>Nossa linha de notas de real é desenvolvida com os mais altos padrões de qualidade e materiais premium. Cada detalhe é cuidadosamente produzido para garantir máxima durabilidade, textura realista e um acabamento profissional para colecionadores exigentes.</p>
+    </div>
+    <div class="gallery-grid reveal">
+        <img src="nota1.jpg" alt="Notas de Real - Acabamento Premium" class="gallery-img">
+        <img src="nota2.jpg" alt="Notas de Real - Coleção" class="gallery-img">
+        <img src="nota3.jpg" alt="Notas de Real - Detalhes" class="gallery-img">
+        <img src="nota4.jpg" alt="Notas de Real - Alta Definição" class="gallery-img">
+        <img src="nota5.jpg" alt="Notas de Real - Material Premium" class="gallery-img">
+        <img src="nota6.jpg" alt="Notas de Real - Qualidade" class="gallery-img">
+    </div>
+    <div style="text-align: center; margin-top: 50px;" class="reveal">
+        <p class="muted" style="margin-bottom: 25px;">Trabalhamos com transparência e compromisso. Consulte nossa equipe para conhecer os modelos disponíveis e condições exclusivas.</p>
+        <a class="btn primary" href="#contato">Consultar Disponibilidade</a>
+    </div>
+</div></section>
+
+<!-- CONTATO -->
+<section class="section" id="contato"><div class="wrap">
+<div class="section-head reveal"><div class="kicker">Atendimento Direto</div><h2>Consulte Disponibilidade.</h2><p>Informe o modelo ou pacote desejado. Nossa equipe confirmará os detalhes e a disponibilidade pelo Telegram.</p></div>
+<div class="contact-grid">
+<div class="panel reveal"><span class="pill">MANDRAKE CARTÕES</span><h3 style="margin-top:20px; font-family:'Playfair Display', serif; font-size:24px;">Fale com a Equipe</h3><p class="muted" style="margin-bottom:25px;">Catálogo • Modelos • Pacotes • Disponibilidade</p><div class="contact-item"><b>Contato Privado</b><a style="color:var(--purple); font-weight:600;" href="https://t.me/MerlinACunha" target="_blank" rel="noopener">@MerlinACunha ↗</a></div><div class="contact-item"><b>Grupo Oficial</b><a style="color:var(--purple); font-weight:600;" href="https://t.me/+q80-qdgxArg4MzVh" target="_blank" rel="noopener">𝐌𝐀𝐍𝐃𝐑𝐀𝐊𝐄 𝐂𝐀𝐑𝐓𝐎𝐄𝐒 ↗</a></div></div>
+<div class="panel reveal"><form class="form" id="contactForm"><label>Nome<input name="name" required placeholder="Seu nome"></label><label>Produto de interesse<select name="product" required><option value="">Selecione</option><option>Bradesco Condomínio</option><option>Ourocard Amarelo</option><option>Ourocard Infinite</option><option>Caixa Poupança</option><option>Ícone Visa Infinite</option><option>Nubank Roxo</option><option>PicPay Platinum</option><option>Amazon Prime World Elite</option><option>PagBank Black</option><option>Mix de 3</option><option>Mix de 5</option><option>Mix de 10</option><option>Mix de 20</option><option>Notas de Real (Linha Premium)</option><option>Outro modelo</option></select></label><label>Mensagem<textarea name="message" required placeholder="Escreva sua dúvida ou o modelo que procura..."></textarea></label><button class="btn primary" type="submit">Preparar Mensagem</button><div id="formActions" hidden><a class="btn primary" id="sendTelegram" href="https://t.me/MerlinACunha" target="_blank" rel="noopener">Abrir Telegram</a><button class="btn ghost" id="copyMessage" type="button">Copiar Mensagem</button></div><p class="notice" id="status" aria-live="polite">O formulário prepara uma mensagem; você revisa e envia pelo Telegram.</p></form></div>
+</div></div></section>
+</main>
+
+<!-- RODAPÉ -->
+<footer class="footer"><div class="wrap footer-inner">
+<div>
+<a class="brand" href="#inicio" style="margin-bottom:10px; display:inline-flex;">
+  <span class="brand-text" style="font-size:16px;">MANDRAKE CARTÕES & CRÉDITO<small>CATÁLOGO PREMIUM</small></span>
+</a>
+<p>© <span id="year"></span> Mandrake Cartões & Crédito. Produtos destinados estritamente a colecionismo e composição visual.</p>
+</div>
+<div class="muted" style="font-size:12px">Consulte disponibilidade e condições pelo atendimento.</div>
+</div></footer>
+
+<script>
+const toggle=document.getElementById('mobileToggle'),nav=document.getElementById('navlinks');
+toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.textContent=opened?'✕':'☰';toggle.setAttribute('aria-expanded',String(opened))});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+if('IntersectionObserver' in window){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el))}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
+let msg='';
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);msg=`Olá! Gostaria de consultar o catálogo Mandrake Cartões & Crédito.\nNome: ${d.get('name')}\nProduto: ${d.get('product')}\nMensagem: ${d.get('message')}`;document.getElementById('sendTelegram').href='https://t.me/MerlinACunha';document.getElementById('formActions').hidden=false;document.getElementById('formActions').style.display='grid';document.getElementById('status').textContent='Mensagem preparada. Abra o Telegram e cole o texto abaixo ou copie a mensagem.';});
+document.getElementById('copyMessage').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(msg);document.getElementById('status').textContent='Mensagem copiada. Cole-a na conversa do Telegram.'}catch{document.getElementById('status').textContent=msg}});
+</script>
+</body></html>
